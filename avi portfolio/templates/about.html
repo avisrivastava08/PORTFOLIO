@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block title %}About - Aviral Srivastava{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6">
+        <h2 class="mb-4">About Me</h2>
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="text-center mb-4">
+                    <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Aviral Srivastava" class="img-fluid rounded-circle profile-image mb-3">
+                </div>
+                <p class="lead">I am a passionate Computer Science student specializing in AI, with a strong foundation in Machine Learning, Deep Learning, and Full-Stack Development.</p>
+                <p>Currently pursuing my BE in Computer Science with specialization in AI at Chitkara University, I am constantly exploring new technologies and methodologies to solve real-world problems.</p>
+            </div>
+        </div>
+        
+        <h3 class="mt-5 mb-4">Education</h3>
+        <div class="card mb-3">
+            <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bi bi-mortarboard-fill display-4 text-primary me-3"></i>
+                    <div>
+                        <h5 class="card-title">Chitkara University</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">BE CSE-AI | 2022 - 2026</h6>
+                        <p class="card-text">Specializing in Artificial Intelligence and Machine Learning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-book-fill display-4 text-primary me-3"></i>
+                    <div>
+                        <h5 class="card-title">HAL Public School</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Physics, Chemistry, and Mathematics | 2019 - 2021</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <h3 class="mb-4">Skills</h3>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <img src="{{ url_for('static', filename='images/ai-ml.jpg') }}" class="img-fluid rounded mb-3" alt="AI & ML">
+                        <h5 class="card-title">AI & ML</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="bi bi-robot text-primary me-2"></i> Machine Learning</li>
+                            <li class="mb-2"><i class="bi bi-diagram-3 text-primary me-2"></i> Deep Learning</li>
+                            <li class="mb-2"><i class="bi bi-cpu text-primary me-2"></i> Neural Networks</li>
+                            <li><i class="bi bi-chat-square-text text-primary me-2"></i> Natural Language Processing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <img src="{{ url_for('static', filename='images/web-dev.jpg') }}" class="img-fluid rounded mb-3" alt="Web Development">
+                        <h5 class="card-title">Web Development</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="bi bi-flower1 text-primary me-2"></i> Flask</li>
+                            <li class="mb-2"><i class="bi bi-code-slash text-primary me-2"></i> HTML/CSS</li>
+                            <li class="mb-2"><i class="bi bi-file-earmark-code text-primary me-2"></i> JavaScript</li>
+                            <li><i class="bi bi-bootstrap text-primary me-2"></i> Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <img src="{{ url_for('static', filename='images/data-analysis.jpg') }}" class="img-fluid rounded mb-3" alt="Data Analysis">
+                        <h5 class="card-title">Data Analysis</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="bi bi-graph-up text-primary me-2"></i> Power BI</li>
+                            <li class="mb-2"><i class="bi bi-bar-chart text-primary me-2"></i> Data Visualization</li>
+                            <li class="mb-2"><i class="bi bi-table text-primary me-2"></i> Excel</li>
+                            <li><i class="bi bi-calculator text-primary me-2"></i> DAX</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <img src="{{ url_for('static', filename='images/programming.jpg') }}" class="img-fluid rounded mb-3" alt="Programming Languages">
+                        <h5 class="card-title">Programming Languages</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="bi bi-filetype-py text-primary me-2"></i> Python</li>
+                            <li class="mb-2"><i class="bi bi-filetype-java text-primary me-2"></i> Java</li>
+                            <li class="mb-2"><i class="bi bi-filetype-cpp text-primary me-2"></i> C/C++</li>
+                            <li><i class="bi bi-database text-primary me-2"></i> SQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

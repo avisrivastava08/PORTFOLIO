@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block title %}Projects - Aviral Srivastava{% endblock %}
+
+{% block content %}
+<h2 class="text-center mb-5">My Projects</h2>
+
+<div class="row g-4">
+    <!-- E-commerce Website -->
+    <div class="col-md-6">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='images/ecommerce.jpg') }}" class="card-img-top" alt="E-commerce Website">
+            <div class="card-body">
+                <h3 class="card-title">E-commerce Website</h3>
+                <p class="card-text">A full-featured e-commerce platform built with Flask, offering users a seamless shopping experience with efficient order management and customer support.</p>
+                <div class="tech-stack mb-3">
+                    <span class="badge bg-primary">Flask</span>
+                    <span class="badge bg-primary">HTML</span>
+                    <span class="badge bg-primary">CSS</span>
+                    <span class="badge bg-primary">JavaScript</span>
+                </div>
+                <a href="https://github.com/avisrivastava08/ecommerce" class="btn btn-outline-primary" target="_blank">
+                    <i class="bi bi-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- IPL Score Prediction -->
+    <div class="col-md-6">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='images/ipl.jpg') }}" class="card-img-top" alt="IPL Score Prediction">
+            <div class="card-body">
+                <h3 class="card-title">IPL Score Prediction</h3>
+                <p class="card-text">A machine learning model that predicts IPL match scores using historical data, featuring a user-friendly interface and comprehensive data analysis.</p>
+                <div class="tech-stack mb-3">
+                    <span class="badge bg-primary">Python</span>
+                    <span class="badge bg-primary">Seaborn</span>
+                    <span class="badge bg-primary">Sklearn</span>
+                    <span class="badge bg-primary">HTML/CSS</span>
+                </div>
+                <a href="https://github.com/avisrivastava08/ipl-prediction" class="btn btn-outline-primary" target="_blank">
+                    <i class="bi bi-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sentiment Analysis -->
+    <div class="col-md-6">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='images/sentiment.jpg') }}" class="card-img-top" alt="Sentiment Analysis">
+            <div class="card-body">
+                <h3 class="card-title">Sentiment Analysis</h3>
+                <p class="card-text">A text sentiment classification system that analyzes and categorizes text data (reviews, social media posts) into positive, negative, or neutral sentiments.</p>
+                <div class="tech-stack mb-3">
+                    <span class="badge bg-primary">Flask</span>
+                    <span class="badge bg-primary">Scikit-learn</span>
+                    <span class="badge bg-primary">Matplotlib</span>
+                    <span class="badge bg-primary">HTML/CSS</span>
+                </div>
+                <a href="https://github.com/avisrivastava08/sentiment-analysis" class="btn btn-outline-primary" target="_blank">
+                    <i class="bi bi-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Zomato Analysis -->
+    <div class="col-md-6">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='images/zomato.jpg') }}" class="card-img-top" alt="Zomato Analysis">
+            <div class="card-body">
+                <h3 class="card-title">Zomato Restaurants Analysis</h3>
+                <p class="card-text">A comprehensive Power BI dashboard providing insights into restaurant performance, including country-wise and cuisine-wise analysis with interactive visualizations.</p>
+                <div class="tech-stack mb-3">
+                    <span class="badge bg-primary">Power BI</span>
+                    <span class="badge bg-primary">Excel</span>
+                    <span class="badge bg-primary">Power Query</span>
+                    <span class="badge bg-primary">DAX</span>
+                </div>
+                <a href="https://github.com/avisrivastava08/zomato-analysis" class="btn btn-outline-primary" target="_blank">
+                    <i class="bi bi-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

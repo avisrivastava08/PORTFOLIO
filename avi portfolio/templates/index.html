@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Aviral Srivastava{% endblock %}
+
+{% block content %}
+<div class="row align-items-center min-vh-75 fade-in">
+    <div class="col-md-6">
+        <h1 class="display-4 fw-bold mb-4">Hi, I'm Aviral Srivastava</h1>
+        <p class="lead mb-4">A passionate Computer Science student specializing in AI, with expertise in Machine Learning, Deep Learning, and Full-Stack Development.</p>
+        <div>
+            <a href="/contact" class="btn btn-primary">Contact Me</a>
+        </div>
+    </div>
+    <div class="col-md-6 text-center">
+        <img src="{{ url_for('static', filename='../static/avi .jpg') }}" 
+             alt="Aviral Srivastava" 
+             class="img-fluid rounded profile-image"
+             style="max-width: 400px; box-shadow: 0 8px 16px rgba(37,99,235,0.15);">
+    </div>
+</div>
+
+<section class="mt-5 fade-in">
+    <h2 class="text-center mb-4">What I Do</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body text-center p-4">
+                    <div class="icon-wrapper mb-3">
+                        <i class="bi bi-code-slash display-4"></i>
+                    </div>
+                    <h3 class="card-title h4 mb-3">Full-Stack Development</h3>
+                    <p class="card-text text-muted">Building responsive and dynamic web applications using Flask, HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body text-center p-4">
+                    <div class="icon-wrapper mb-3">
+                        <i class="bi bi-robot display-4"></i>
+                    </div>
+                    <h3 class="card-title h4 mb-3">AI & ML</h3>
+                    <p class="card-text text-muted">Developing intelligent systems using Machine Learning, Deep Learning, and Natural Language Processing.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body text-center p-4">
+                    <div class="icon-wrapper mb-3">
+                        <i class="bi bi-graph-up display-4"></i>
+                    </div>
+                    <h3 class="card-title h4 mb-3">Data Analysis</h3>
+                    <p class="card-text text-muted">Creating insightful visualizations and analysis using Power BI and Python data science tools.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 
